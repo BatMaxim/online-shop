@@ -1,0 +1,154 @@
+.breadcrumbs
+    height: 148px
+    background-color: #F8F3F4
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    &__heading
+        font-style: normal
+        font-weight: normal
+        font-size: 24px
+        line-height: 29px
+        color: $mainContentColor
+    &__list
+        display: flex
+        list-style: none
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+
+    &__list li:not(:last-child)::after
+        content: ' / '
+        margin-right: 4px
+        color: $ContentColor1
+
+    &__list li:last-child &__link
+        font-weight: 700
+        color: $mainContentColor
+    &__link
+        color: $ContentColor1
+    &__link:hover
+        color: $mainContentColor
+.filters
+    z-index: 1
+    position: relative
+    margin-top: 51px
+    margin-bottom: 65px
+    &__main-filter
+        padding: 13px 16px
+        position: absolute
+        &-name
+            display: block
+            font-style: normal
+            font-weight: 600
+            font-size: 14px
+            line-height: 17px
+            color: black
+
+        &-name::-webkit-details-marker
+            display: none
+        &-img
+            margin-left: 11px
+        &[open]
+            box-sizing: border-box
+            width: 360px
+            filter: drop-shadow(0 0 20px rgba(0,0,0,0.2))
+            background-color: $ContentColor
+        &[open] > &-name
+            color: $mainContentColor
+        &[open] > &-name .-img path
+            fill: $mainContentColor
+.filter-item
+    margin-top: 16px
+    &__name::-webkit-details-marker
+        display: none
+    &__name
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: $ContentColor1
+
+        padding: 11px
+        border-left: $mainContentColor solid 5px
+        border-bottom: 1px solid $ContentColor2
+    &__list
+        list-style: none
+        margin: 24px 12px
+    &__element
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+
+        color: $ContentColor1
+        margin-bottom: 11px
+.filters-center
+    display: flex
+    justify-content: center
+    margin-top: 51px
+    gap: 30px
+.filter-center
+    &__name
+        display: block
+        margin-top: 13px
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+
+        color: $ContentColor1
+    &__name::-webkit-details-marker
+        display: none
+    &__img
+        padding-left: 10px
+    &__list_element
+        display: block
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 16px
+
+        color: $ContentColor1
+    &__list_element input
+        border: 1px solid $ContentColor2
+        margin-right: 10px
+    &__content
+        margin-top: 5px
+        width: 79px
+        box-sizing: border-box
+        position: absolute
+        margin-left: -8px
+        background-color: $ContentColor
+        filter: drop-shadow(0 0 20px rgba(0,0,0,0.2))
+        padding: 10px
+        display: flex
+        flex-direction: column
+        gap: 6px
+.pages
+    margin-top: 48px
+    width: 280px
+    padding-left: calc(50% - 140px)
+    padding-right: calc(50% - 140px)
+    &__list
+        list-style: none
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 17px
+        border: 1px solid $ContentColor2
+        padding: 11px 16px
+        border-radius: 4px
+    &__list_element a
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: $ContentColor2
+    &__list_element:hover a
+        color: $mainContentColor
+
+.selected_link a
+    color: $mainContentColor

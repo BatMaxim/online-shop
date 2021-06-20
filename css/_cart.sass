@@ -1,0 +1,159 @@
+.cart-content
+    display: flex
+    justify-content: space-between
+    margin-top: 96px
+    &__right
+        width: 360px
+.cart-products
+    width: 652px
+    &__buttons
+        margin-top: 72px
+        width: 100%
+        display: flex
+        justify-content: space-between
+    &__button
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        background: $ContentColor
+        border: 1px solid $BorderColor1
+        padding: 16px 38px
+        transition: background 0.3s, color 0.3s
+        &:hover
+            background: $BorderColor1
+            color: $ContentColor
+.cart-product
+    background-color: $ContentColor
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13))
+    height: 306px
+    width: 100%
+    display: flex
+    margin-bottom: 40px
+    &__img
+        height: 100%
+    &__description
+        width: 262px
+        margin: 22px 0 0 31px
+    &__name
+        font-style: normal
+        font-weight: normal
+        font-size: 24px
+        line-height: 29px
+        color: $BGColor
+    &__specifications
+        margin-top: 42px
+    &__specification
+        margin-bottom: 6px
+        font-style: normal
+        font-weight: normal
+        font-size: 22px
+        line-height: 26px
+        color: $ContentColor5
+
+        &_selected
+            color: $mainContentColor
+        &_quantity-block
+            display: flex
+        &_quantity
+            width: 43px
+            height: 24px
+            border: 1px solid $BorderColor
+            margin-left: 24px
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 22px
+            color: $ContentColor6
+            text-align: center
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button
+                -webkit-appearance: none
+                margin: 0
+
+    &__exit
+        margin: 22px 0 0 57px
+.exit__img:hover path
+    transition: 0.3s
+    fill: $mainContentColor
+.cart-form
+    &__heading
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: $BGColor
+    &__btn
+        font-style: normal
+        font-weight: 300
+        font-size: 11px
+        line-height: 13px
+        color: $BorderColor1
+        border: 1px solid $BorderColor1
+        background: $ContentColor
+        padding: 9px 14px
+        margin-top: 24px
+        transition: background 0.3s, color 0.3s
+        &:hover
+            background: $BorderColor1
+            color: $ContentColor
+.main-text-input
+    box-sizing: border-box
+    width: 100%
+    height: 45px
+    margin-top: 20px
+    font-style: normal
+    font-weight: 300
+    font-size: 13px
+    line-height: 16px
+    padding: 0 16px 0 16px
+    border: 1px solid $BorderColor1
+    color: $BGColor
+    &_placeholder::placeholder
+        color: $ContentColor7
+.price-block
+    margin-top: 57px
+    width: 100%
+    background-color: $BGColor4
+    &__sub-total
+        margin: 0 34px 0 34px
+        text-align: right
+        padding-top: 39px
+        font-style: normal
+        font-weight: normal
+        font-size: 11px
+        line-height: 13px
+        color: $ContentColor3
+        &_price
+            margin-left: 32px
+    &__grand-total
+        text-align: right
+        margin: 12px 37px 0 37px
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: $BGColor
+        &_price
+            margin-left: 32px
+            color: $mainContentColor
+            font-weight: 700
+    &__hr
+        border: none
+        background: $BGcolor2
+        height: 1px
+        width: 275px
+        margin: 21px 43px 0 43px
+    &__btn
+        margin: 17px 43px 42px 43px
+        border: none
+        background: $mainContentColor
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: $ContentColor
+        width: 275px
+        height: 50px
+        transition: background 0.3s
+        &:hover
+            background: $ButtonHoverColor

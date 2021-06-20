@@ -1,0 +1,100 @@
+.product-photo
+    width: 100%
+    height: 777px
+    background-color: $BGColor3
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__btn
+        width: 47px
+        height: 47px
+        background: rgba(42, 42, 42, 0.15)
+        display: flex
+        justify-content: center
+        align-items: center
+    &__btn:hover path
+        transition: fill 0.3s
+        fill: $mainContentColor
+    &__img
+        width: 597px
+.main-product-desc
+    position: relative
+    top: -65px
+    margin: 0 auto 62px auto
+
+    background-color: $ContentColor
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+    width: 1140px
+    border: 1px solid $BorderColor
+    &__category
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: $mainContentColor
+        margin-top: 64px
+    &__hr-top
+        margin-top: 12px
+        width: 63px
+        height: 3px
+        border: none
+        background: $mainContentColor
+    &__name
+        font-style: normal
+        font-weight: 300
+        font-size: 18px
+        line-height: 22px
+        margin-top: 12px
+        color: $ContentColor3
+    &__text
+        margin-top: 48px
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        text-align: center
+        color: $ContentColor4
+        width: 555px
+    &__price
+        font-style: normal
+        font-weight: 300
+        font-size: 24px
+        line-height: 29px
+        margin-top: 32px
+        color: $mainContentColor
+    &__hr-bottom
+        border: none
+        background: $BorderColor
+        height: 1px
+        width: 641px
+        margin-top: 65px
+    &__filters
+        margin-top: 65px
+        display: flex
+        gap: 22px
+    &__button
+        display: flex
+        justify-content: center
+        align-items: center
+        position: static
+        color: $mainContentColor
+        border: 1px solid $mainContentColor
+        width: 211px
+        height: 48px
+        margin-top: 48px
+        margin-bottom: 48px
+        transition: 0.3s
+    &__button path
+        fill: $mainContentColor
+    &__button:hover
+        color: $ContentColor
+        border-color: $ContentColor
+        background-color: $mainContentColor
+    &__button:hover path
+        fill: $ContentColor
+.footer_without_advantages
+    margin-top: 128px
